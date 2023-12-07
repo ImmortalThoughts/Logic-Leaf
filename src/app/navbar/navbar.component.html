@@ -1,0 +1,140 @@
+<div style="height:100px; background-color: white;border-bottom: 1px solid black;" fxLayout="row"
+    fxLayoutAlign="space-between center">
+    <div fxLayout="row" style="margin-left: 2rem;" class="mt-1">
+        <img src="assets\Images\Logic Leaf Logo.png" alt="Logo" width="100%" height="250px">
+    </div>
+    <div fxLayout="row" style="margin-right: 10rem;">
+        <ul class="menu cf">
+            <li><a routerLink="">Home</a></li>
+            <li>
+                <a>Jobs</a>
+                <ul class="submenu">
+                    <li><a routerLink="jobsearch">Job Search</a></li>
+                    <li><a routerLink="submitCV">Submit Your CV</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Our Services</a>
+                <ul class="submenu">
+                    <li><a routerLink="staffingservice">Staffing Service</a></li>
+                    <li><a routerLink="digitalmarketing">Digitl Marketing</a></li>
+                    <li><a routerLink="graphicsdesigning">Graphics Designing</a></li>
+                </ul>
+            </li>
+            <li>
+                <a>Join US</a>
+                <ul class="submenu">
+                    <li><a routerLink="asafreelancer">As a Freelancer</a></li>
+                    <li><a routerLink="forthepermanentrole">For the Permanant role</a></li>
+                </ul>
+            </li>
+            <li><a routerLink="contactus">Contact us</a></li>
+        </ul>
+    </div>
+
+    <div fxLayout="row" style="margin-right: 5rem;" class="socialIcons">
+        <img src="assets\Images\Naukri Icon.png" alt="Naukri Icon" style="height:50px ;">
+        <img src="assets\Images\facebook.png" alt="facebook" style="height:50px ;">
+        <img src="assets\Images\linkedin.png" alt="linkedin" style="height:50px ;">
+        <img src="assets\Images\instagram.png" alt="Instagram" style="height:50px ;">
+        <img src="assets\Images\whatsapp.png" alt="Whatsapp" style="height:50px ;">
+    </div>
+</div>
+
+
+
+
+
+
+<!-- <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="space-between center">
+    <mat-toolbar-row>
+        <div fxLayout="row">
+            <button mat-icon-button (click)="sidenav.toggle()" matTooltip="Menu">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+        <div fxLayout="row">
+            <button mat-button><img src="assets/Images/LogicLeaf.png" alt="Background Logo"
+                    style="width: 100%; height: 60px;margin-left:2px;"></button>
+        </div>
+
+        <ul fxLayout="row">
+            <li><mat-icon>home</mat-icon>Home</li>
+            <li><mat-icon>directions_bike</mat-icon>Job Seeker</li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" routerLink="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Our Service
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink="#">Action</a>
+                  <a class="dropdown-item" routerLink="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" routerLink="#">Something else here</a>
+                </div>
+              </li>
+            <li><mat-icon>handshake</mat-icon>Join US</li>
+            <li><mat-icon>contact_mail</mat-icon>Contact US</li>
+        </ul>
+       <div fxLayout="row">
+            <div *ngIf="!xsSize" style="padding-inline-start: 10rem;">
+                <button mat-button><mat-icon>home</mat-icon>Home</button>
+                <button mat-button><mat-icon>directions_bike</mat-icon>Job Seeker</button>
+                <button mat-button (mouseover)="onMouseOver(showList=true)" (mouseout)="onMouseOut(showList=false)">
+                    <mat-icon>miscellaneous_services</mat-icon>Our Services
+                </button>
+                <mat-list #serviceList *ngIf="showList">
+                    <mat-list-item>Item 1</mat-list-item>
+                    <mat-list-item>Item 2</mat-list-item>
+                    <mat-list-item>Item 3</mat-list-item>
+                </mat-list>
+                <button mat-button><mat-icon>work</mat-icon>Employers</button>
+                <button mat-button><mat-icon>handshake</mat-icon>Join US</button>
+                <button mat-button><mat-icon>contact_mail</mat-icon>Contact US</button>
+            </div>
+        </div> 
+
+
+    </mat-toolbar-row>
+
+</mat-toolbar> -->
+
+<!-- <mat-sidenav-container class="app-container" fxFlexFill>
+    <mat-sidenav #sidenav mode="side" [class.mat-elevation-z4]="true" class="app-sidenav" [fxHide.gt-xs]="true">
+        <mat-nav-list>
+            <mat-list-item routerLink="#">
+                <mat-icon>home</mat-icon><span>Home</span>
+            </mat-list-item>
+            <mat-list-item routerLink="#">
+                <mat-icon>directions_bike</mat-icon><span>Job Seeker</span>
+            </mat-list-item>
+            <mat-expansion-panel [class.mat-elevation-z0]="true">
+                <mat-expansion-panel-header>
+                    <mat-icon>miscellaneous_services</mat-icon>Our Services
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-list-item routerLink="#">
+                        <span>Staffing Service</span>
+                    </a>
+                    <a mat-list-item routerLink="#">
+                        <span>Digital Marketing</span>
+                    </a>
+                    <a mat-list-item routerLink="#">
+                        <span>Graphics Designing</span>
+                    </a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-expansion-panel [class.mat-elevation-z0]="true">
+                <mat-expansion-panel-header>
+                    <mat-icon>handshake</mat-icon> Join Us
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+                    <a mat-list-item routerLink="#">As A Freelancer</a>
+                    <a mat-list-item routerLink="#">For The Permanant Role</a>
+                </mat-nav-list>
+            </mat-expansion-panel>
+            <mat-list-item routerLink="#">
+                <mat-icon>contact_mail</mat-icon><span>Contact Us</span>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-sidenav>
+</mat-sidenav-container> -->

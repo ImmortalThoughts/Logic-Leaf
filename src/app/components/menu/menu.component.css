@@ -1,0 +1,80 @@
+.cardStyling {
+  margin-left: 8rem;
+  width: 18rem;
+  border: 1px solid black;
+  box-shadow: 10px 10px 3px grey;
+}
+
+.card {
+  transition: 1s;
+  padding: 0;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.card-body {
+  background-color: #000;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+.IndustriesClass div img {
+  padding-left: 35px;
+}
+
+.IndustriesClass div h1 {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.marquee {
+  overflow-x: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: scrolling 10s linear infinite;
+
+}
+
+.marquee-item {
+  flex: 0 0 16vw;
+  margin: 0 1vw;
+  /*   flex: 0 0 20vw; */
+  /*   margin: 0 2vw; */
+}
+
+.marquee-item img {
+  display: block;
+  width: 100%;
+  /*   padding: 0 20px; */
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translatex(-144vw);
+  }
+}
