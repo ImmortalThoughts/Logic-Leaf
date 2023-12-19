@@ -1,12 +1,12 @@
-
+/* 
 .gradient-custom {
-  /* fallback for old browsers */
+  /* fallback for old browsers 
   background: #f093fb;
 
-  /* Chrome 10-25, Safari 5.1-6 */
+  /* Chrome 10-25, Safari 5.1-6 
   background: -webkit-linear-gradient(to bottom right, rgb(219, 7, 7), rgb(130, 58, 67));
 
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
   background: linear-gradient(to bottom right, rgb(147, 0, 0), rgb(152, 89, 97))
 }
 
@@ -22,7 +22,7 @@
 }
 
 .card {
-/* From https://css.glass */
+/* From https://css.glass 
 background: rgba(255, 255, 255, 0.23);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -33,5 +33,59 @@ border: 1px solid rgba(255, 255, 255, 0.59);
 .form-label{
   color: white;
   font-weight: bold;
+} 
+*/
+
+
+.gradient-custom {
+  background: #f093fb;
+  background: -webkit-linear-gradient(to bottom right, rgb(219, 7, 7), rgb(130, 58, 67));
+  background: linear-gradient(to bottom right, rgb(147, 0, 0), rgb(152, 89, 97));
 }
 
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0.8px);
+  -webkit-backdrop-filter: blur(0.8px);
+  border: 1px solid rgba(255, 255, 255, 0.59);
+}
+
+.form-label {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  .container {
+    padding: 3em;
+  }
+
+  .col-12 {
+    padding: 0;
+  }
+
+  .card {
+    margin-top: 20px;
+  }
+
+  .form-label {
+    font-size: 24px;
+  }
+}
+
+/* Add more media queries as needed for different screen sizes */

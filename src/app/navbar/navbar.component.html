@@ -5,30 +5,30 @@
     </div>
     <div fxLayout="row" style="margin-right: 10rem;">
         <ul class="menu cf">
-            <li><a routerLink="">Home</a></li>
+            <li><a [routerLink]="['']">Home</a></li>
             <li>
                 <a>Jobs</a>
                 <ul class="submenu">
-                    <li><a routerLink="jobsearch">Job Search</a></li>
-                    <li><a routerLink="submitCV">Submit Your CV</a></li>
+                    <li><a [routerLink]="['/jobsearch']">Job Search</a></li>
+                    <li><a [routerLink]="['/submitCV']">Submit Your CV</a></li>
                 </ul>
             </li>
             <li>
                 <a>Our Services</a>
                 <ul class="submenu">
-                    <li><a routerLink="staffingservice">Staffing Service</a></li>
-                    <li><a routerLink="digitalmarketing">Digitl Marketing</a></li>
-                    <li><a routerLink="graphicsdesigning">Graphics Designing</a></li>
+                    <li><a [routerLink]="['/staffingservice']">Staffing Service</a></li>
+                    <li><a [routerLink]="['/digitalmarketing']">Digitl Marketing</a></li>
+                    <li><a [routerLink]="['/graphicsdesigning']">Graphics Designing</a></li>
                 </ul>
             </li>
             <li>
                 <a>Join US</a>
                 <ul class="submenu">
-                    <li><a routerLink="asafreelancer">As a Freelancer</a></li>
-                    <li><a routerLink="forthepermanentrole">For the Permanant role</a></li>
+                    <li><a [routerLink]="['/asafreelancer']">As a Freelancer</a></li>
+                    <li><a [routerLink]="['/forthepermanentrole']">For the Permanant role</a></li>
                 </ul>
             </li>
-            <li><a routerLink="contactus">Contact us</a></li>
+            <li><a [routerLink]="['/contactus']">Contact us</a></li>
         </ul>
     </div>
 
